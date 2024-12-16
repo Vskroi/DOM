@@ -143,15 +143,14 @@ button.addEventListener('click',()=>{
         console.log(false)}
 })
 button.addEventListener('click',()=>{
-    if(passwordInput.value.length <= 8){
-        passwordInput.style.color = 'green'
-        password.style.color = 'green'
-        password.innerHTML = 'Thanks'
+    if(passwordInput.value.length >= 8){
         console.log(true)
     }
     else{
         
         passwordInput.style.color = 'red'
+        password.innerHTML = 'check password please'
+        password.style.color = 'red'
         console.log(false)}
 })
 
